@@ -23,7 +23,7 @@ describe("CalculateDueDate Function", () => {
   test("Calculates due date including weekends", () => {
     const submitDate = new Date(2024, 6, 12, 13); // Friday, July 12, 1 PM
     const turnaround = 20;
-    const expectedDueDate = new Date(2024, 6, 16, 17); // Tuesday, July 16, 11 AM
+    const expectedDueDate = new Date(2024, 6, 16, 17); // Tuesday, July 16, 5 PM
     expect(CalculateDueDate(submitDate, turnaround)).toEqual(expectedDueDate);
   });
 
